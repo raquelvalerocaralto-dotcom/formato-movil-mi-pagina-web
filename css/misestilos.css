@@ -1,5 +1,7 @@
 body {
     font-size: 1.2rem;
+     background-color: black;
+    overflow-x: hidden;
 }
 
 .menu span {
@@ -51,10 +53,6 @@ a {
 
 }
 
-body{
-    background-color: black;
-}
-
 .contenedor {
     display: grid;
     grid-template-columns: 1fr;
@@ -94,6 +92,7 @@ body{
 
 
 .linea-dorada {
+    width: 200%;
     border-bottom: 2px solid gold ;
 }
 
@@ -109,6 +108,8 @@ main {
 
 main video {
     width: 100%;
+    height: 100%;
+    
 }
 
 
@@ -124,6 +125,7 @@ border: 3px solid white;
 background-color: #eebb31;
 border: 3px solid white;
 padding: 45px;
+height: 80%;
 }  
 }
 
@@ -133,4 +135,62 @@ padding: 45px;
 .tapas{
     background-color: #eebb31;
 }
+  .cervezas:hover, .tapas:hover {
+    background-color: #000000;  
+    transform: scale(1.05);    
+  }
+
+img{
+  width: 0%;  
+}
+
+.pie-pagina {
+  width: 120%;           
+  height: 110px;        
+  background: white;         
+  border: 1px solid #ffffff; 
+  margin-top: 20%;
+}
+img{
+  width: 50%;
+  margin-top: 4%; 
+  margin-left: 30%; 
+}
+
+
  
+@media(min-width:768px){
+ .cervezas, .tapas {
+    display: inline-block; 
+    background-color: #eebb31;
+    text-align: center;
+    width: 150px;
+    padding: 25px;
+    margin: 10px;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: 0.3s; 
+  }
+
+  
+  .cervezas:hover, .tapas:hover {
+    background-color: #000000;  
+    transform: scale(1.05);    
+  }
+
+.pie-pagina {
+  width: 110%;           
+  height: 180px;        
+  background: white;         
+  border: 1px solid #ffffff; 
+  margin-top: 6%;
+}
+img{
+  width: 20%;
+  margin-top: 2%; 
+  margin-left: 40%; 
+}
+
+}
+
+
